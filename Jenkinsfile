@@ -20,7 +20,7 @@ pipeline{
 
         stage('Run Test'){
             steps{
-                sh 'python -m unittest discover .'
+                sh 'PYTHONPATH=$PYTHONPATH python -m unittest discover .'
             }
         }
     }
