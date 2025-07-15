@@ -20,7 +20,7 @@ pipeline{
 
         stage('Run Test'){
             steps{
-                sh 'PYTHONPATH=$PYTHONPATH pytest --junitxml=report.xml || true'
+                sh 'PYTHONPATH=$PYTHONPATH python -m pytest --junitxml=report.xml || true'
             }
         }
 
