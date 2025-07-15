@@ -7,7 +7,7 @@ pipeline{
 
     environment{
         PIP_TARGET = './.venv-packages'
-        PYTHONPATH = '/.venv-packages'
+        PYTHONPATH = './.venv-packages'
     }
 
     stages{
